@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://dksyxnpkucvnq"]
+
+[ext_resource type="Script" path="res://Scenes/Credits/FS_credits.gd" id="1_fpuui"]
+[ext_resource type="FontFile" uid="uid://ddvraleoobo24" path="res://Resources/Fonts/MonsterFriendFore.otf" id="1_snsli"]
+[ext_resource type="FontFile" uid="uid://bbly70lgaefhl" path="res://Resources/Fonts/Determination Mono.ttf" id="2_7uthq"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_fpuui")
+
+[node name="Game Name" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 98.0
+offset_top = 220.0
+offset_right = 736.0
+offset_bottom = 274.0
+theme_override_fonts/normal_font = ExtResource("1_snsli")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[color=purple]Fallen Stars"
+fit_content = true
+scroll_active = false
+
+[node name="Engine" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 4.0
+offset_top = 400.0
+offset_right = 642.0
+offset_bottom = 1750.0
+theme_override_fonts/normal_font = ExtResource("2_7uthq")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "			  [font_size=48][color=purple]CREDITS[/color][/font_size]
+
+
+
+
+				[color=purple]AU by 
+		 [color=orange]Fallen Star Dev Team[/color]
+
+
+			  Undertale
+			   [color=white]Toby Fox[/color]
+
+
+			game made with 
+		    [color=red]xxxxtale engine[/color]
+
+
+			    sprite
+			   [color=darkred]Yuttari3[/color]
+
+
+			 phase 1 theme 
+			     [color=royalblue]Saster[/color]
+
+
+			 phase 2 theme  
+				 [color=gray]DropOff[/color]
+
+
+xxxxtale engine by [color=yellow]Gesee[/color]
+game by [color=yellow]Gesee
+
+
+
+
+		THANK YOU FOR PLAYING :)"
+
+[node name="Thanks" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 136.0
+offset_top = 428.0
+offset_right = 764.0
+offset_bottom = 496.0
+theme_override_fonts/normal_font = ExtResource("2_7uthq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Thank you for playing!!"
+
+[node name="Hard" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 368.0
+offset_top = 308.0
+offset_right = 554.0
+offset_bottom = 347.0
+rotation = -0.320407
+theme_override_fonts/normal_font = ExtResource("2_7uthq")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[color=red]Hard Mode"
+
+[node name="Camera" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
