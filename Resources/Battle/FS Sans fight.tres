@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BattleData" load_steps=5 format=3 uid="uid://cj46ekbxqxo1m"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Battlebase.gd" id="1_c1s51"]
+[ext_resource type="PackedScene" uid="uid://bkpx6jfrpti4v" path="res://Objects/Enemies/fs!sans.tscn" id="1_sl2r1"]
+[ext_resource type="Resource" uid="uid://b72vfdvfavuet" path="res://Resources/ButtonSet/Default.tres" id="2_0kxl7"]
+[ext_resource type="Script" path="res://Resources/Battle/Script/FS Sans Fight.gd" id="2_gguis"]
+
+[resource]
+script = ExtResource("1_c1s51")
+fnf_mode = false
+random_status = false
+serious_battle = true
+Enemies = Array[PackedScene]([ExtResource("1_sl2r1")])
+regular_dialogue_style = true
+BattleStyle = "Undertale"
+Sound = "res://Sounds/BGM/fs_theme.ogg"
+Bullets_patterns = Array[String](["res://Scripts/AttacksPatterns/FS!Sans/Phase 1/attack0.gd"])
+battle_script = ExtResource("2_gguis")
+H_attacks = Array[String]([])
+item_style = "original"
+status = Array[String]([])
+Dialogue_order = Array[Array]([])
+dialogue_file = ""
+player_dialogue = Array[String]([])
+button_set = ExtResource("2_0kxl7")
+random_slice_rotation = false
+direct_attack = false
+just_a_fight = true
+path_to_credit = "res://Scenes/Credits/FS_credits.tscn"
+attack_to_continue = true
+battle_color_theme = Color(0.313726, 0.239216, 0.372549, 1)

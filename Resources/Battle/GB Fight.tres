@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BattleData" load_steps=4 format=3 uid="uid://b5cwnl8n0c10d"]
+
+[ext_resource type="PackedScene" uid="uid://kg03chm6qt4t" path="res://Objects/Enemies/enemy_test.tscn" id="1_n8npl"]
+[ext_resource type="Script" path="res://Scripts/Resources/Battlebase.gd" id="1_ow7ry"]
+[ext_resource type="Script" path="res://Resources/Battle/Script/gb_fight.gd" id="2_m3qp5"]
+
+[resource]
+script = ExtResource("1_ow7ry")
+fnf_mode = false
+random_status = false
+serious_battle = false
+Enemies = Array[PackedScene]([ExtResource("1_n8npl")])
+regular_dialogue_style = true
+BattleStyle = "Undertale"
+Sound = "res://Sounds/BGM/gb_theme.ogg"
+Bullets_patterns = Array[String](["res://Scripts/AttacksPatterns/Test/attack_intro.gd"])
+battle_script = ExtResource("2_m3qp5")
+H_attacks = Array[String]([])
+item_style = "original"
+status = Array[String]([])
+Dialogue_order = Array[Array]([])
+dialogue_file = ""
+player_dialogue = Array[String]([])
+random_slice_rotation = false
+direct_attack = false
+just_a_fight = true
+path_to_credit = ""
+attack_to_continue = false
+battle_color_theme = Color(1, 1, 1, 1)

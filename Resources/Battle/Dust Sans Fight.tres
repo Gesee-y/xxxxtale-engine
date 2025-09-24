@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BattleData" load_steps=4 format=3 uid="uid://b3y1mf0500yja"]
+
+[ext_resource type="PackedScene" uid="uid://whxohyvs8xtl" path="res://Objects/Enemies/dust_sans.tscn" id="1_mvc0x"]
+[ext_resource type="Script" path="res://Scripts/Resources/Battlebase.gd" id="1_uhpsu"]
+[ext_resource type="Script" path="res://Resources/Battle/Script/Dust Sans Fight.gd" id="2_ahgr2"]
+
+[resource]
+script = ExtResource("1_uhpsu")
+fnf_mode = false
+random_status = false
+serious_battle = true
+Enemies = Array[PackedScene]([ExtResource("1_mvc0x")])
+regular_dialogue_style = true
+BattleStyle = "Undertale"
+Sound = "res://Sounds/BGM/dust_theme.ogg"
+Bullets_patterns = Array[String](["res://Scripts/AttacksPatterns/DustSans/Genocide/Paps/attack_intro.gd"])
+battle_script = ExtResource("2_ahgr2")
+H_attacks = Array[String]([])
+item_style = "original"
+status = Array[String]([])
+Dialogue_order = Array[Array]([])
+dialogue_file = "res://Resources/Battle/Dialogues/DustSansFight.txt"
+player_dialogue = Array[String]([])
+random_slice_rotation = true
+direct_attack = false
+just_a_fight = true
+path_to_credit = ""
+attack_to_continue = true
+battle_color_theme = Color(1, 1, 1, 1)
