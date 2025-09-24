@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc871t267j6qr"]
+
+[ext_resource type="SpriteFrames" uid="uid://bpe6g5aqx5xtv" path="res://Resources/arrow.tres" id="1_2hn7m"]
+[ext_resource type="Script" path="res://Scripts/Battle/FNF/note.gd" id="1_gt6xf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i8rab"]
+radius = 3.0
+height = 24.0
+
+[node name="Note" type="Area2D"]
+scale = Vector2(1.5, 1.25)
+script = ExtResource("1_gt6xf")
+metadata/Note = true
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_2hn7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_i8rab")

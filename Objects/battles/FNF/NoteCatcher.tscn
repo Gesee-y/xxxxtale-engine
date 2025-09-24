@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsieh1axci2m8"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/FNF/NoteCatcher.gd" id="1_cf6kk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hoi7j"]
+
+[node name="NoteCatcher" type="Polygon2D"]
+polygon = PackedVector2Array(315, 196, 330, 181, 345, 178, 364, 179, 378, 191, 389, 216, 382, 244, 370.512, 255.762, 354, 260, 343.497, 261.071, 329, 259, 313, 247, 308, 225, 309, 205)
+script = ExtResource("1_cf6kk")
+
+[node name="BG" type="Polygon2D" parent="."]
+color = Color(0, 0, 0, 1)
+
+[node name="CatchZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CatchZone"]
+shape = SubResource("CircleShape2D_hoi7j")
