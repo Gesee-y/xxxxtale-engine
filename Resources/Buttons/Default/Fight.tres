@@ -1,0 +1,23 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://bxc1xhrwm0spo"]
+
+[ext_resource type="Texture2D" uid="uid://c1av33e3fh5p3" path="res://Sprites/Buttons/Default/Fight Button-1.png" id="1_wy8er"]
+[ext_resource type="Texture2D" uid="uid://f6gbowssrrlf" path="res://Sprites/Buttons/Default/Fight Button-2.png" id="2_p14mu"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wy8er")
+}],
+"loop": false,
+"name": &"normal",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p14mu")
+}],
+"loop": true,
+"name": &"selected",
+"speed": 5.0
+}]

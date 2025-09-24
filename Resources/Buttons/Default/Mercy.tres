@@ -1,0 +1,23 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://jokt3t402e7h"]
+
+[ext_resource type="Texture2D" uid="uid://dgl5ot8kohk04" path="res://Sprites/Buttons/Default/Mercy Button-1.png" id="1_a6sul"]
+[ext_resource type="Texture2D" uid="uid://pwxxhmaqf76e" path="res://Sprites/Buttons/Default/Mercy Button-2.png" id="2_wod1g"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_a6sul")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wod1g")
+}],
+"loop": true,
+"name": &"selected",
+"speed": 5.0
+}]
