@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://budaluw5yirni"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Box.gd" id="1_xodbn"]
+
+[node name="Border" type="Polygon2D" node_paths=PackedStringArray("player")]
+polygon = PackedVector2Array(0, 24, 552, 24, 552, 168, 0, 168)
+script = ExtResource("1_xodbn")
+player = NodePath("")
+
+[node name="BG" type="Polygon2D" parent="."]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(5, 29, 547, 29, 547, 163, 5, 163)
+
+[node name="Mask" type="Polygon2D" parent="."]
+clip_children = 1
+
+[node name="atk" type="Node2D" parent="Mask"]
+show_behind_parent = true
+z_as_relative = false

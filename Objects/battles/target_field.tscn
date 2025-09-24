@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://e7m58a5tboa2"]
+
+[ext_resource type="Texture2D" uid="uid://rkdm6yp7c3c2" path="res://Sprites/Battle/spr_dumbtarget_0.png" id="1_pibrq"]
+[ext_resource type="Script" path="res://Scripts/Battle/target_field.gd" id="2_3j3l3"]
+
+[node name="TargetField" type="Sprite2D"]
+texture = ExtResource("1_pibrq")
+script = ExtResource("2_3j3l3")

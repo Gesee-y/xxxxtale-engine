@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://oov2bp5mc340"]
+
+[ext_resource type="Texture2D" uid="uid://cbx2ropb1rlfn" path="res://Sprites/Battle/Target 1.png" id="1_lf20d"]
+[ext_resource type="Texture2D" uid="uid://eiphgptv0115" path="res://Sprites/Battle/Target 2.png" id="2_v5hfy"]
+[ext_resource type="Script" path="res://Scripts/Battle/target_bar.gd" id="3_aidsx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wk7wn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lf20d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_v5hfy")
+}],
+"loop": true,
+"name": &"hitted",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lf20d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="TargetBar" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_wk7wn")
+animation = &"hitted"
+script = ExtResource("3_aidsx")
