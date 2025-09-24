@@ -5,4 +5,16 @@ This engine is a base for any of your undertale fangame, letting you focus on yo
 
 ## Features
 
+- **Overworld template**
+- **Cutscene template**
+- **Battle/Attacks template**
+- **Flexible attacks with pre attack events, pre patterns events, post attack events**
+- **Everything as ressource**: Your battles, weapons, characters, etc are all customizable ressource.
+- **Battle management**: With battles continuity for a highly flexible way to describe how you want your battles to go.
+- **Efficient turn based systems**: Using multiples trigger to manage the different states of the fight.
+- **Easy dialogue system**: No hardcoding here, load your dialogues from a separate in a completely human readable way
+- **Object as CVS**: Load your objects from CSV files, you created a new kind of weapon ? Just add it in that CVS bro and you're done.
+- **Custom collision system**: Instead of relying on Godot collisions systems which may not suit the intensity of your fangame, a custom collision system has been implemented specifically for undertale.
+- **Powerful writer**: That has his own little DSL to create powerful text and even trigger events from them.
 
+## 
