@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhl7hdm873nyf"]
+
+[ext_resource type="Texture2D" uid="uid://51imb12x18fi" path="res://Sprites/border.png" id="1_wqp22"]
+[ext_resource type="Script" path="res://Scripts/Writer.gd" id="2_xfvaq"]
+[ext_resource type="Script" path="res://Scripts/Overworld/text_box.gd" id="2_yer8r"]
+[ext_resource type="Resource" uid="uid://c8vkda2dvrvct" path="res://Resources/Typers/Default.tres" id="4_sqg7r"]
+
+[node name="Box" type="NinePatchRect"]
+clip_contents = true
+offset_right = 570.0
+offset_bottom = 140.0
+texture = ExtResource("1_wqp22")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+script = ExtResource("2_yer8r")
+
+[node name="Writer" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 16.0
+offset_right = 562.0
+offset_bottom = 126.0
+script = ExtResource("2_xfvaq")
+typer = ExtResource("4_sqg7r")
+
+[node name="BG" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 0
+offset_left = -11.0
+offset_top = -14.0
+offset_right = 571.0
+offset_bottom = 154.0
+color = Color(0, 0, 0, 1)

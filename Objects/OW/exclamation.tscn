@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlsikptjjasje"]
+
+[ext_resource type="Texture2D" uid="uid://ce7nl6lahp3ru" path="res://Sprites/Player/946f6fab-48a3-4fcf-879b-e69a1e231646.png" id="1_2s6sd"]
+[ext_resource type="Texture2D" uid="uid://crj7apdoyw5p" path="res://Sprites/Player/e5558b6c-5b3e-44d9-9e45-7792ef07e4a7.png" id="2_4jqbu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_018nv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2s6sd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4jqbu")
+}],
+"loop": true,
+"name": &"smile",
+"speed": 5.0
+}]
+
+[node name="Exclamation" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_018nv")

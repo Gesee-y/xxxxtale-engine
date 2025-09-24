@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhh47gvudqayo"]
+
+[ext_resource type="Script" path="res://Scripts/Overworld/save_point.gd" id="1_7v37c"]
+[ext_resource type="Texture2D" uid="uid://b64mpv1rt23c3" path="res://Sprites/Overworld/save_point.png" id="2_xn3lf"]
+[ext_resource type="Script" path="res://Scripts/Overworld/interaction.gd" id="2_ykruh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wipa3"]
+radius = 5.09902
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nq6b8"]
+atlas = ExtResource("2_xn3lf")
+region = Rect2(0, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vs5c"]
+atlas = ExtResource("2_xn3lf")
+region = Rect2(21, 0, 21, 19)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qo08"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nq6b8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vs5c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wv214"]
+radius = 8.06226
+
+[node name="Savepoint" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_7v37c")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_wipa3")
+
+[node name="OWInteraction" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0qo08")
+autoplay = "default"
+script = ExtResource("2_ykruh")
+
+[node name="Area2D" type="Area2D" parent="OWInteraction"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OWInteraction/Area2D"]
+shape = SubResource("CircleShape2D_wv214")

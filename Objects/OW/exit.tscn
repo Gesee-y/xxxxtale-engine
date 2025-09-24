@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://67xfeemkx35h"]
+
+[ext_resource type="Texture2D" uid="uid://dtt6gpgl15yot" path="res://Sprites/Overworld/82063371-4531-4be6-b149-f921492a55c6.png" id="1_dnp7j"]
+[ext_resource type="Script" path="res://Scripts/Overworld/exit.gd" id="2_g3a02"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l465g"]
+size = Vector2(48, 48)
+
+[node name="Exit" type="Sprite2D"]
+texture = ExtResource("1_dnp7j")
+script = ExtResource("2_g3a02")
+
+[node name="ExitArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+shape = SubResource("RectangleShape2D_l465g")
+
+[connection signal="body_entered" from="ExitArea" to="." method="_on_exit_area_body_entered"]

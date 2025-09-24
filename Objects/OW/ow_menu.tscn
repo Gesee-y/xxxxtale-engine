@@ -1,0 +1,176 @@
+[gd_scene load_steps=6 format=3 uid="uid://t3s1c2cd22f0"]
+
+[ext_resource type="Texture2D" uid="uid://51imb12x18fi" path="res://Sprites/border.png" id="1_5o0wp"]
+[ext_resource type="Script" path="res://Scripts/Overworld/ow_menu.gd" id="1_n8sk0"]
+[ext_resource type="FontFile" uid="uid://bbly70lgaefhl" path="res://Resources/Fonts/Determination Mono.ttf" id="2_dubhq"]
+[ext_resource type="FontFile" uid="uid://lnn5kc1og5ag" path="res://Resources/Fonts/Crypt Of Tomorrow.ttf" id="3_nm28t"]
+[ext_resource type="Texture2D" uid="uid://bjpbw1ch2fmuo" path="res://Sprites/Player/battle/Player Soul.png" id="5_1rdk5"]
+
+[node name="OW Menu" type="Node2D"]
+script = ExtResource("1_n8sk0")
+
+[node name="border1" type="NinePatchRect" parent="."]
+clip_contents = true
+offset_right = 169.0
+offset_bottom = 109.0
+texture = ExtResource("1_5o0wp")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="BG" type="ColorRect" parent="border1"]
+z_index = -1
+layout_mode = 0
+offset_left = -11.0
+offset_top = -14.0
+offset_right = 653.0
+offset_bottom = 489.0
+color = Color(0, 0, 0, 1)
+
+[node name="name" type="RichTextLabel" parent="border1"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 158.0
+offset_bottom = 47.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Chara"
+
+[node name="lv" type="RichTextLabel" parent="border1"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 46.0
+offset_right = 92.0
+offset_bottom = 66.0
+pivot_offset = Vector2(-356, -3)
+theme_override_fonts/normal_font = ExtResource("3_nm28t")
+theme_override_font_sizes/normal_font_size = 16
+text = "LV"
+
+[node name="hp" type="RichTextLabel" parent="border1"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 66.0
+offset_right = 147.0
+offset_bottom = 86.0
+pivot_offset = Vector2(-356, -3)
+theme_override_fonts/normal_font = ExtResource("3_nm28t")
+theme_override_font_sizes/normal_font_size = 16
+text = "hp 20/20"
+
+[node name="gold" type="RichTextLabel" parent="border1"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 85.0
+offset_right = 147.0
+offset_bottom = 105.0
+pivot_offset = Vector2(-356, -3)
+theme_override_fonts/normal_font = ExtResource("3_nm28t")
+theme_override_font_sizes/normal_font_size = 16
+text = "G 0"
+
+[node name="border2" type="NinePatchRect" parent="."]
+clip_contents = true
+offset_left = 23.0
+offset_top = 131.0
+offset_right = 158.0
+offset_bottom = 300.0
+texture = ExtResource("1_5o0wp")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="BG" type="ColorRect" parent="border2"]
+z_index = -1
+layout_mode = 0
+offset_left = -11.0
+offset_top = -14.0
+offset_right = 653.0
+offset_bottom = 489.0
+color = Color(0, 0, 0, 1)
+
+[node name="Items" type="RichTextLabel" parent="border2"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 13.0
+offset_right = 190.0
+offset_bottom = 53.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Items"
+
+[node name="Stats" type="RichTextLabel" parent="border2"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 63.0
+offset_right = 190.0
+offset_bottom = 103.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Stats"
+
+[node name="Cell" type="RichTextLabel" parent="border2"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 111.0
+offset_right = 191.0
+offset_bottom = 151.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Cell"
+
+[node name="border3" type="NinePatchRect" parent="."]
+clip_contents = true
+offset_left = 200.0
+offset_top = 24.0
+offset_right = 581.0
+offset_bottom = 472.0
+texture = ExtResource("1_5o0wp")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="BG" type="ColorRect" parent="border3"]
+z_index = -1
+layout_mode = 0
+offset_left = -11.0
+offset_top = -14.0
+offset_right = 653.0
+offset_bottom = 489.0
+color = Color(0, 0, 0, 1)
+
+[node name="Use" type="RichTextLabel" parent="."]
+offset_left = 248.0
+offset_top = 416.0
+offset_right = 399.0
+offset_bottom = 456.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Use"
+
+[node name="Info" type="RichTextLabel" parent="."]
+offset_left = 352.0
+offset_top = 416.0
+offset_right = 503.0
+offset_bottom = 456.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Info"
+
+[node name="Drop" type="RichTextLabel" parent="."]
+offset_left = 464.0
+offset_top = 416.0
+offset_right = 615.0
+offset_bottom = 456.0
+theme_override_fonts/normal_font = ExtResource("2_dubhq")
+theme_override_font_sizes/normal_font_size = 32
+text = "Drop"
+
+[node name="soul" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(46, 163)
+texture = ExtResource("5_1rdk5")
