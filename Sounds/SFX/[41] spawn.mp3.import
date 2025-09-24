@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmdxvk1ww1whm"
+path="res://.godot/imported/[41] spawn.mp3-1962d1c5ac4fb7bbb7c686bc408d2424.mp3str"
+
+[deps]
+
+source_file="res://Sounds/SFX/[41] spawn.mp3"
+dest_files=["res://.godot/imported/[41] spawn.mp3-1962d1c5ac4fb7bbb7c686bc408d2424.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
