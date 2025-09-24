@@ -1,0 +1,33 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bpe6g5aqx5xtv"]
+
+[ext_resource type="Texture2D" uid="uid://8xsmvq4sg0ay" path="res://Sprites/Bullets/Arrows/arrows.png" id="1_330fj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yl3tp"]
+atlas = ExtResource("1_330fj")
+region = Rect2(16, 2, 15, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_653ts"]
+atlas = ExtResource("1_330fj")
+region = Rect2(16, 28, 15, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5g13u"]
+atlas = ExtResource("1_330fj")
+region = Rect2(16, 54, 15, 26)
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yl3tp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_653ts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5g13u")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}]

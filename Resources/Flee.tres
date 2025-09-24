@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://cyc07fnwg810x"]
+
+[ext_resource type="Texture2D" uid="uid://w1btqjqbvjmf" path="res://Sprites/Player/battle/soul_run1.png" id="1_vjx72"]
+[ext_resource type="Texture2D" uid="uid://s1ta2uh0bfy2" path="res://Sprites/Player/battle/soul_run2.png" id="2_ytel5"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vjx72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ytel5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
