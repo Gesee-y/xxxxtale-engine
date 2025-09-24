@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://gicyday7k5h0"]
+
+[ext_resource type="Texture2D" uid="uid://rkosyn78ts4g" path="res://Sprites/Weapon animation/Real Knife/dcdeeec2-df30-4a02-beef-19c94cc0247c.png" id="1_xg5fq"]
+[ext_resource type="Texture2D" uid="uid://cxer6t43u3rxo" path="res://Sprites/Weapon animation/Real Knife/c02f59cb-ac93-4593-8c57-157674d4b4d3.png" id="2_rna15"]
+[ext_resource type="Texture2D" uid="uid://da545klpocu3i" path="res://Sprites/Weapon animation/Real Knife/750b4e80-76d4-443c-9a92-8b86f28ac902.png" id="3_oua34"]
+[ext_resource type="Texture2D" uid="uid://rcdb4p2b7or1" path="res://Sprites/Weapon animation/Real Knife/1bbd26e1-1b3f-45bf-85fc-3a8dd3b397e2.png" id="4_vjidp"]
+[ext_resource type="Texture2D" uid="uid://j5e3wq6eyxy0" path="res://Sprites/Weapon animation/Real Knife/b7769814-1e61-469f-acfe-84f6e1575c0c.png" id="5_nwmqg"]
+[ext_resource type="Texture2D" uid="uid://c8jipwocsxppe" path="res://Sprites/Weapon animation/Real Knife/c59ca10e-0a96-4eaa-9d7c-227417dc1a82.png" id="6_5ch67"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_xg5fq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rna15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oua34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vjidp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nwmqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5ch67")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]

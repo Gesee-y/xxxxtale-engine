@@ -1,0 +1,41 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://btadxw7jtigj5"]
+
+[ext_resource type="Texture2D" uid="uid://cxviuy21tg7hj" path="res://Sprites/Weapon animation/B.Shoes/92af6b6c-7723-4fab-aa36-844747d30000.png" id="1_asxsq"]
+[ext_resource type="Texture2D" uid="uid://bnu8lje7xcobx" path="res://Sprites/Weapon animation/B.Shoes/8cf5a247-d291-45e6-bedc-ec161c8c7f87.png" id="2_sci4g"]
+[ext_resource type="Texture2D" uid="uid://biaq226pn8s50" path="res://Sprites/Weapon animation/B.Shoes/159daa88-8f50-4a17-a9ff-6e7fd902b1d6.png" id="3_aakjt"]
+[ext_resource type="Texture2D" uid="uid://cxqgmgpcm7fxx" path="res://Sprites/Weapon animation/B.Shoes/9a242313-04f7-4f99-9d18-23511cf33a81.png" id="4_6uajs"]
+[ext_resource type="Texture2D" uid="uid://c5jbjx5a5jfdl" path="res://Sprites/Weapon animation/B.Shoes/d7da4128-13ae-4774-87dd-4aecd169da7b.png" id="5_hkan6"]
+[ext_resource type="Texture2D" uid="uid://b3l5ax1krcgbq" path="res://Sprites/Weapon animation/B.Shoes/4ff86f98-8531-4520-8002-4c0bb3b99769.png" id="6_u6wfs"]
+[ext_resource type="Texture2D" uid="uid://capdl1y58ntn3" path="res://Sprites/Weapon animation/B.Shoes/77f9b244-dd99-4c21-82d7-d978eb3d7474.png" id="7_qu55l"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_asxsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sci4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_aakjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6uajs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hkan6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u6wfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qu55l")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]

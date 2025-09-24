@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://nqrotbe3ti"]
+
+[ext_resource type="Texture2D" uid="uid://cuvfnsoec7qo7" path="res://Sprites/Weapon animation/Stick/spr_strike_0.png" id="1_rkrqa"]
+[ext_resource type="Texture2D" uid="uid://rf8hppg6jguk" path="res://Sprites/Weapon animation/Stick/spr_strike_1.png" id="2_igj2v"]
+[ext_resource type="Texture2D" uid="uid://bokwe3nw2vakw" path="res://Sprites/Weapon animation/Stick/spr_strike_2.png" id="3_3m0hs"]
+[ext_resource type="Texture2D" uid="uid://4p4a4477ew6j" path="res://Sprites/Weapon animation/Stick/spr_strike_3.png" id="4_utr6b"]
+[ext_resource type="Texture2D" uid="uid://dmwqxjcrjtlfm" path="res://Sprites/Weapon animation/Stick/spr_strike_4.png" id="5_7dgqu"]
+[ext_resource type="Texture2D" uid="uid://bu6lqb786qkuw" path="res://Sprites/Weapon animation/Stick/spr_strike_5.png" id="6_86io8"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_rkrqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_igj2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3m0hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_utr6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7dgqu")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_86io8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]
