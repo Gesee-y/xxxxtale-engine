@@ -15,6 +15,18 @@ This engine is a base for any of your undertale fangame, letting you focus on yo
 - **Easy dialogue system**: No hardcoding here, load your dialogues from a separate in a completely human readable way
 - **Object as CVS**: Load your objects from CSV files, you created a new kind of weapon ? Just add it in that CVS bro and you're done.
 - **Custom collision system**: Instead of relying on Godot collisions systems which may not suit the intensity of your fangame, a custom collision system has been implemented specifically for undertale.
-- **Powerful writer**: That has his own little DSL to create powerful text and even trigger events from them.
+- **Powerful text writer**: That has his own little DSL to create powerful text and even trigger events from them.
 
-## 
+## Fangames made with xxxxtale
+
+- **[Fallen Stars Sans fight + Hard mode]()**: A deep fight against a tired Sans. He doesn't want to win or lose... He just want sufferings to end.[![Fallen stars]]()
+- **[Dusttale Sans Fight]()**: A brutal battle agains a Sans who got too much LOVE. In the end, he realized that no matter if he get LOVE or choose love, he will still feel despair.[![Dusttale]]()
+- **[Gaster blaster fight]()**: A funny test fight I made for fun.[![GB FIGHT!]]()
+
+## License
+
+This project is under the MIT License. Feel free to do whatever you want with it.
+
+## Contact
+
+If you ever feel like reaching me, you can email me at gesee37@gmail.com. 
