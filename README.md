@@ -12,10 +12,28 @@ This engine is a base for any of your undertale fangame, letting you focus on yo
 - **Everything as ressource**: Your battles, weapons, characters, etc are all customizable ressource.
 - **Battle management**: With battles continuity for a highly flexible way to describe how you want your battles to go.
 - **Efficient turn based systems**: Using multiples trigger to manage the different states of the fight.
-- **Easy dialogue system**: No hardcoding here, load your dialogues from a separate in a completely human readable way
+- **Easy dialogue system**: No hardcoding here, load your dialogues from a separate in a completely human readable way.
+   * Example: 
+```txt
+Sans:Hit me all ya want, I am more determined than you think.
+
+{END}
+
+Sans:Ya know kid, I always wondered why you continue killing.
+
+{END}
+
+Sans:Turn Text 3
+
+{END}
+
+Sans:Turn Text 4
+
+{END}
+```
 - **Object as CVS**: Load your objects from CSV files, you created a new kind of weapon ? Just add it in that CVS bro and you're done.
 - **Custom collision system**: Instead of relying on Godot collisions systems which may not suit the intensity of your fangame, a custom collision system has been implemented specifically for undertale.
-- **Powerful text writer**: That has his own little DSL to create powerful text and even trigger events from them.
+- **Powerful text writer**: That has his own little DSL to create powerful text and even trigger events from them. Example: `{sans:smile}Don't worry buddo{P:2},{S:1}I got your [color:red]spine[/color]`.
 
 ## Fangames made with xxxxtale
 
