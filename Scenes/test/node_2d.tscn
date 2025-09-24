@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://yh5bth3i0tle"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Dialogue Manager.gd" id="1_3oghx"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_3oghx")
+file = "res://Resources/Battle/Dialogues/DustSansFight.txt"
