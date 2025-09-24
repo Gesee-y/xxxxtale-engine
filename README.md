@@ -3,6 +3,13 @@
 An Undertale engine in Godot. This was my first real project.  
 This engine serves as a base for any Undertale fangame, letting you focus on your patterns and stories instead of worrying about how to make a turn-based fight.
 
+## Little introduction
+
+I actually love undertale fangames. I always find fascinating how much we can do with little things.
+This engine is actually the 3rd one I made.
+The first was UnderDelta which aimed to be a fully featured undertale/deltarune engine but after some refactor, it became ____tale, but the codebase was unmaintanable and too heavy so I remade the engine from scratch and here it is.
+**xxxxtale**!!!
+
 ## Features
 
 - **Overworld template**
