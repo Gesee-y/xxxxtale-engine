@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ButtonSet" load_steps=6 format=3 uid="uid://b72vfdvfavuet"]
+
+[ext_resource type="SpriteFrames" uid="uid://dcuq0dxdw6ly8" path="res://Resources/Buttons/Default/Act.tres" id="1_6g5ol"]
+[ext_resource type="Script" path="res://Scripts/Resources/button_set.gd" id="1_80yo4"]
+[ext_resource type="SpriteFrames" uid="uid://bxc1xhrwm0spo" path="res://Resources/Buttons/Default/Fight.tres" id="2_7yfr1"]
+[ext_resource type="SpriteFrames" uid="uid://dc48gcl31lat" path="res://Resources/Buttons/Default/Item.tres" id="3_g1xhv"]
+[ext_resource type="SpriteFrames" uid="uid://jokt3t402e7h" path="res://Resources/Buttons/Default/Mercy.tres" id="4_elftg"]
+
+[resource]
+script = ExtResource("1_80yo4")
+fight_button = ExtResource("2_7yfr1")
+act_button = ExtResource("1_6g5ol")
+item_button = ExtResource("3_g1xhv")
+mercy_button = ExtResource("4_elftg")
