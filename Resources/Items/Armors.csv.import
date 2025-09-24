@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cdoqqjquboqhd"
+
+[deps]
+
+files=["res://Resources/Items/Armors.SeriousName.translation", "res://Resources/Items/Armors.Defense.translation", "res://Resources/Items/Armors.LongName.translation", "res://Resources/Items/Armors.UseText.translation", "res://Resources/Items/Armors.DropText.translation", "res://Resources/Items/Armors.Info.translation", "res://Resources/Items/Armors.BattleDescription.translation"]
+
+source_file="res://Resources/Items/Armors.csv"
+dest_files=["res://Resources/Items/Armors.SeriousName.translation", "res://Resources/Items/Armors.Defense.translation", "res://Resources/Items/Armors.LongName.translation", "res://Resources/Items/Armors.UseText.translation", "res://Resources/Items/Armors.DropText.translation", "res://Resources/Items/Armors.Info.translation", "res://Resources/Items/Armors.BattleDescription.translation"]
+
+[params]
+
+compress=true
+delimiter=0

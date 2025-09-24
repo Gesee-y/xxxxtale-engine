@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bx3afj88urau1"
+
+[deps]
+
+files=["res://Resources/Items/Items.SeriousName.translation", "res://Resources/Items/Items.HealPoints.translation", "res://Resources/Items/Items.LongName.translation", "res://Resources/Items/Items.UseText.translation", "res://Resources/Items/Items.DropText.translation", "res://Resources/Items/Items.Info.translation", "res://Resources/Items/Items.BattleDescription.translation", "res://Resources/Items/Items.CanDrop.translation", "res://Resources/Items/Items.CanKeep.translation", "res://Resources/Items/Items.newItem.translation"]
+
+source_file="res://Resources/Items/Items.csv"
+dest_files=["res://Resources/Items/Items.SeriousName.translation", "res://Resources/Items/Items.HealPoints.translation", "res://Resources/Items/Items.LongName.translation", "res://Resources/Items/Items.UseText.translation", "res://Resources/Items/Items.DropText.translation", "res://Resources/Items/Items.Info.translation", "res://Resources/Items/Items.BattleDescription.translation", "res://Resources/Items/Items.CanDrop.translation", "res://Resources/Items/Items.CanKeep.translation", "res://Resources/Items/Items.newItem.translation"]
+
+[params]
+
+compress=true
+delimiter=0

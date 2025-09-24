@@ -1,0 +1,23 @@
+NormalName,SeriousName,HealPoints,LongName,UseText,DropText,Info,BattleDescription,CanDrop,CanKeep,newItem
+
+Bandage,Bandage,10,Bandage,reapplied the Bandage.~Still kind of gooey.;,[],A bandage.~It seem it has bee use many time;,A simple Bandage.,false,false,""
+
+ButtsPie,Pie,99,Butterscotch Pie,ate the Pie.;,[],It's still kindly warm.;,Toriel's Pie.,false,false,""
+
+Bisicle,Bisicle,11,Bisicle,ate half of the Bisicle.;,[],Eat it twice!;,Can be eat twice.,false,true,Unisicle
+
+Unisicle,Unisicle,11,Unisicle,ate the Unisicle.;,[],"Well, eat it once.";,Half a Bisicle.,false,false,""
+
+L.Hero,L.Hero,40,Legendary Hero,ate the Legendary Hero.;,[],You will never forgive him.;,A real hero for hunger.,false,false,""
+
+Fab.DJ,Fab.DJ,40,Fabulous DJ,ate the Fabulous DJ.;,[],[],Napstaton's prestige.,false,false,""
+
+Gold.Tea,G.Tea,90,Golden Tea,drank the Golden Tea.;,[],[],It's Asgore favorite.,false,false,""
+
+Ban.Sp,B.Split,50,Banana Split,ate the Banana Split.;,[],[],Can be shared with friends.,false,false,""
+
+Ketchup,Ketchup,80,Ketchup,drank the Ketchup;,[],[],A gift from Sans.,false,false,""
+
+Starfair,Starfair,60,Starfair,drank the Starfair;,[],[],Sometimes leave behind by stars.,false,false,""
+
+F.Steak,F.Steak,60,Face Steak,ate the Face Steak;,[],[],There is a face on it.,false,false,""

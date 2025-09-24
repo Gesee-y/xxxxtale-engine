@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bkd6v11ju050b"
+
+[deps]
+
+files=["res://Resources/Items/Weapon.SeriousName.translation", "res://Resources/Items/Weapon.Damage.translation", "res://Resources/Items/Weapon.LongName.translation", "res://Resources/Items/Weapon.UseText.translation", "res://Resources/Items/Weapon.DropText.translation", "res://Resources/Items/Weapon.Info.translation", "res://Resources/Items/Weapon.BattleDescription.translation", "res://Resources/Items/Weapon.BarNumber.translation", "res://Resources/Items/Weapon.BarSpeed.translation", "res://Resources/Items/Weapon.BarAcceleration.translation", "res://Resources/Items/Weapon.Animation path.translation", "res://Resources/Items/Weapon.sound path.translation"]
+
+source_file="res://Resources/Items/Weapon.csv"
+dest_files=["res://Resources/Items/Weapon.SeriousName.translation", "res://Resources/Items/Weapon.Damage.translation", "res://Resources/Items/Weapon.LongName.translation", "res://Resources/Items/Weapon.UseText.translation", "res://Resources/Items/Weapon.DropText.translation", "res://Resources/Items/Weapon.Info.translation", "res://Resources/Items/Weapon.BattleDescription.translation", "res://Resources/Items/Weapon.BarNumber.translation", "res://Resources/Items/Weapon.BarSpeed.translation", "res://Resources/Items/Weapon.BarAcceleration.translation", "res://Resources/Items/Weapon.Animation path.translation", "res://Resources/Items/Weapon.sound path.translation"]
+
+[params]
+
+compress=true
+delimiter=0
