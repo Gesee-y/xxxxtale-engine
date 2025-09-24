@@ -39,7 +39,7 @@ Sans: Turn Text 4
 
 ## Fangames made with xxxxtale
 
-- **[Fallen Stars Sans fight + Hard mode]()**: A deep fight against a tired Sans. He doesn't want to win or lose... He just wants the suffering to end.[![Fallen stars]]()
+- **[Fallen Stars Sans fight + Hard mode](https://youtu.be/tv8iYBQ3W-g?si=_I3WD6hH8E8Rq6Gn)**: A deep fight against a tired Sans. He doesn't want to win or lose... He just wants the suffering to end.[![Fallen stars]]()
 - **[Dusttale Sans Fight]()**: A brutal battle against a Sans who got too much LOVE. In the end, he realizes that no matter if he gets LOVE or chooses love, he will still feel despair.[![Dusttale]]()
 - **[Gaster blaster fight]()**: A funny test fight I made for fun.[![GB FIGHT!]]()
 
