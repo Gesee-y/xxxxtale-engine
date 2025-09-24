@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dqg5sxuw0u338"
+path="res://.godot/imported/Pixelated Wingdings.ttf-0bed5f11e8b15c1fe4446405e86ea13e.fontdata"
+
+[deps]
+
+source_file="res://Resources/Fonts/Pixelated Wingdings.ttf"
+dest_files=["res://.godot/imported/Pixelated Wingdings.ttf-0bed5f11e8b15c1fe4446405e86ea13e.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
