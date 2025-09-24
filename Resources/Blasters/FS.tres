@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BlasterData" load_steps=3 format=3 uid="uid://bljj4vdbjqdcc"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Blaster_resource.gd" id="1_671mm"]
+[ext_resource type="SpriteFrames" uid="uid://b3t5oadboyaqx" path="res://Resources/Blasters/GB SpriteFrames/FS.tres" id="2_807dx"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_671mm")
+sprite = ExtResource("2_807dx")
+beam_size = 1.5
+blaster_size = 0.5
+beam_offset = 70.0

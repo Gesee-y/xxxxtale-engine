@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BlasterData" load_steps=3 format=3 uid="uid://6nowp2mb1exu"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Blaster_resource.gd" id="1_yjiwp"]
+[ext_resource type="SpriteFrames" uid="uid://dl0053qjhujlx" path="res://Resources/Blasters/GB SpriteFrames/Dust.tres" id="2_qthxw"]
+
+[resource]
+script = ExtResource("1_yjiwp")
+sprite = ExtResource("2_qthxw")
+beam_size = 1.0
+blaster_size = 1.0
+beam_offset = 0.0

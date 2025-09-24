@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BlasterData" load_steps=3 format=3 uid="uid://cucvl1lysmy0x"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Blaster_resource.gd" id="1_kdh35"]
+[ext_resource type="SpriteFrames" uid="uid://c6h7wd73bouj4" path="res://Resources/Blasters/GB SpriteFrames/Classic.tres" id="2_ukjtb"]
+
+[resource]
+script = ExtResource("1_kdh35")
+sprite = ExtResource("2_ukjtb")
+beam_size = 1.0
+blaster_size = 1.0
