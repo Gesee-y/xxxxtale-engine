@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/OtherScreens/intro.gd" id="1_7nt28"]
+[ext_resource type="FontFile" uid="uid://y7dnyxmeb23" path="res://fonts/Sans Undertale.ttf" id="2_v2w3p"]
+[ext_resource type="Script" path="res://scripts/Writer.gd" id="3_3f1rp"]
+[ext_resource type="FontFile" uid="uid://bte6peks7we7n" path="res://fonts/Determination Web.ttf" id="4_sq320"]
+[ext_resource type="AudioStream" uid="uid://cwekaxji6f5te" path="res://sounds/typer.ogg" id="5_y3wdo"]
+
+[node name="intro" type="Node2D"]
+script = ExtResource("1_7nt28")
+
+[node name="Text" type="RichTextLabel" parent="."]
+offset_left = 24.0
+offset_top = 31.0
+offset_right = 636.0
+offset_bottom = 452.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_v2w3p")
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Text 1"
+scroll_active = false
+script = ExtResource("3_3f1rp")
+text_speed = 0.5
+b_text_speed = 0.7
+color = Color(1, 1, 1, 1)
+text_font = ExtResource("4_sq320")
+font_size = 32
+sound = ExtResource("5_y3wdo")
+dialogue = ["Don't forget to credit if used.", "You have the right to use this engine and change it as you wish, as long as you credit me as \"Demo-Cezar\" if publicly posted.", "afterall,[p]it's just patience and discipline.", "goodluck!", "", "oops...", "", ""]

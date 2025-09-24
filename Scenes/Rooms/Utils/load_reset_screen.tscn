@@ -1,0 +1,130 @@
+[gd_scene load_steps=3 format=3 uid="uid://lct7s5st3gb3"]
+
+[ext_resource type="Script" path="res://Scripts/Overworld/load_reset_screen.gd" id="1_e4xst"]
+[ext_resource type="FontFile" uid="uid://bbly70lgaefhl" path="res://Resources/Fonts/Determination Mono.ttf" id="2_7ck35"]
+
+[node name="LoadResetScreen" type="Node2D"]
+script = ExtResource("1_e4xst")
+
+[node name="Container" type="Node2D" parent="."]
+
+[node name="name" type="Label" parent="Container"]
+offset_left = 120.0
+offset_top = 88.0
+offset_right = 190.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "Chara"
+
+[node name="Time" type="Label" parent="Container"]
+offset_left = 464.0
+offset_top = 88.0
+offset_right = 548.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "278:51"
+
+[node name="Lv" type="Label" parent="Container"]
+offset_left = 288.0
+offset_top = 88.0
+offset_right = 372.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "LV "
+
+[node name="Location" type="Label" parent="Container"]
+offset_left = 120.0
+offset_top = 128.0
+offset_right = 204.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "Core
+"
+
+[node name="continue" type="Label" parent="Container"]
+offset_left = 152.0
+offset_top = 168.0
+offset_right = 264.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "Continue
+"
+
+[node name="Reset" type="Label" parent="Container"]
+offset_left = 400.0
+offset_top = 168.0
+offset_right = 512.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "Reset"
+
+[node name="Credit" type="Label" parent="."]
+offset_left = 192.0
+offset_top = 464.0
+offset_right = 545.0
+offset_bottom = 490.0
+theme_override_colors/font_color = Color(0.647059, 0.647059, 0.647059, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 15
+text = "xxxxtale v0.6.8.0 by Gesee 2024"
+
+[node name="BG" type="TextureRect" parent="."]
+offset_right = 640.0
+offset_bottom = 480.0
+
+[node name="ResetText" type="RichTextLabel" parent="."]
+visible = false
+offset_right = 640.0
+offset_bottom = 392.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 35
+text = " The Name has already been choosen
+"
+
+[node name="Name" type="RichTextLabel" parent="ResetText"]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 88.0
+offset_right = 360.0
+offset_bottom = 152.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_7ck35")
+theme_override_font_sizes/normal_font_size = 35
+bbcode_enabled = true
+text = "[shake]Chara[/shake]
+"
+
+[node name="No" type="Label" parent="ResetText"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 360.0
+offset_right = 232.0
+offset_bottom = 391.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "No
+"
+
+[node name="Yes" type="Label" parent="ResetText"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 360.0
+offset_right = 536.0
+offset_bottom = 391.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7ck35")
+theme_override_font_sizes/font_size = 27
+text = "Yes"

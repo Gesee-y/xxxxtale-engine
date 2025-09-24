@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://duhq32to7r1ab"]
+
+[ext_resource type="Script" path="res://Scripts/Overworld/name_screen.gd" id="1_i7tt2"]
+[ext_resource type="FontFile" uid="uid://bbly70lgaefhl" path="res://Resources/Fonts/Determination Mono.ttf" id="2_uxn0e"]
+
+[node name="NameScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_i7tt2")
+
+[node name="Intro" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 1111.0
+offset_bottom = 64.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.286275, 0.270588, 0.0196078, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_fonts/normal_font = ExtResource("2_uxn0e")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[shake rate = 2 frequeny=0.2]Name the Fallen Human[/shake]"
+scroll_active = false
+
+[node name="Name" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 235.0
+offset_top = 66.0
+offset_right = 596.0
+offset_bottom = 106.0
+grow_horizontal = 2
+focus_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.286275, 0.270588, 0.0196078, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_fonts/normal_font = ExtResource("2_uxn0e")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Chara"
+
+[node name="ResetText" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 392.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_uxn0e")
+theme_override_font_sizes/normal_font_size = 35
+
+[node name="No" type="Label" parent="ResetText"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 360.0
+offset_right = 232.0
+offset_bottom = 391.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_uxn0e")
+theme_override_font_sizes/font_size = 32
+text = "No
+"
+
+[node name="Yes" type="Label" parent="ResetText"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 360.0
+offset_right = 536.0
+offset_bottom = 391.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_uxn0e")
+theme_override_font_sizes/font_size = 32
+text = "Yes"
