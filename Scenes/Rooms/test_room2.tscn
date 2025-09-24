@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://qlqjvde1pekl"]
+
+[ext_resource type="Script" path="res://Scripts/Overworld/OW Base.gd" id="1_46pm8"]
+[ext_resource type="PackedScene" uid="uid://cy4b7a5cagpge" path="res://Objects/OW/collision.tscn" id="2_yixwa"]
+[ext_resource type="PackedScene" path="res://Objects/OW/entry.tscn" id="3_s0fm4"]
+[ext_resource type="PackedScene" uid="uid://67xfeemkx35h" path="res://Objects/OW/exit.tscn" id="4_cf2nh"]
+[ext_resource type="PackedScene" uid="uid://c0o7qxp801c0r" path="res://Scenes/Player/player.tscn" id="5_aoavp"]
+[ext_resource type="PackedScene" uid="uid://cboo3tr8q8bep" path="res://Objects/OW/cutscene.tscn" id="5_dpafy"]
+[ext_resource type="Script" path="res://Scripts/Cutscene/Cut01.gd" id="6_ioxdu"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="6_l4gcx"]
+[ext_resource type="PackedScene" uid="uid://t3s1c2cd22f0" path="res://Objects/OW/ow_menu.tscn" id="7_j002a"]
+[ext_resource type="PackedScene" uid="uid://dhl7hdm873nyf" path="res://Objects/OW/text_box.tscn" id="8_j56ns"]
+
+[node name="Overworld" type="Node2D" node_paths=PackedStringArray("Menu", "text_box", "player", "entry_node", "exit_node", "camera")]
+script = ExtResource("1_46pm8")
+Menu = NodePath("CanvasLayer/OW Menu")
+text_box = NodePath("CanvasLayer/Box")
+player = NodePath("Player")
+entry_node = NodePath("Entry")
+exit_node = NodePath("Exit")
+camera = NodePath("Camera")
+
+[node name="Collisions" type="Node2D" parent="."]
+
+[node name="Collision2" parent="Collisions" instance=ExtResource("2_yixwa")]
+position = Vector2(152, 321)
+scale = Vector2(1, 8.125)
+
+[node name="Collision3" parent="Collisions" instance=ExtResource("2_yixwa")]
+position = Vector2(-164, 251)
+scale = Vector2(40.375, 1)
+
+[node name="Collision4" parent="Collisions" instance=ExtResource("2_yixwa")]
+position = Vector2(457, 208.5)
+scale = Vector2(1, 21.8125)
+
+[node name="Collision5" parent="Collisions" instance=ExtResource("2_yixwa")]
+position = Vector2(-29.5, 40)
+scale = Vector2(60.1875, 1)
+
+[node name="Entry" type="Node2D" parent="."]
+
+[node name="Entry" parent="Entry" node_paths=PackedStringArray("player") instance=ExtResource("3_s0fm4")]
+position = Vector2(303, 339)
+scale = Vector2(6.33333, 1.25)
+start_direction = "up"
+player = NodePath("../../Player")
+
+[node name="Exit" type="Node" parent="."]
+
+[node name="Exit" parent="Exit" instance=ExtResource("4_cf2nh")]
+position = Vector2(305, 412)
+scale = Vector2(5.95833, 1.25)
+Destination = "TestRoom1"
+
+[node name="Interactions" type="Node2D" parent="."]
+
+[node name="Cutscene" type="Node" parent="."]
+
+[node name="Cutscene" parent="Cutscene" node_paths=PackedStringArray("main") instance=ExtResource("5_dpafy")]
+position = Vector2(-36, 147)
+scale = Vector2(3.75, 12.375)
+Cutscene_script = ExtResource("6_ioxdu")
+main = NodePath("../..")
+
+[node name="Player" parent="." node_paths=PackedStringArray("camera", "overworld") instance=ExtResource("5_aoavp")]
+position = Vector2(299, 294)
+camera = NodePath("../Camera")
+overworld = NodePath("..")
+
+[node name="Camera" type="Camera2D" parent="."]
+script = ExtResource("6_l4gcx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="OW Menu" parent="CanvasLayer" instance=ExtResource("7_j002a")]
+visible = false
+
+[node name="Box" parent="CanvasLayer" node_paths=PackedStringArray("overworld") instance=ExtResource("8_j56ns")]
+visible = false
+offset_left = 35.0
+offset_top = 304.0
+offset_right = 605.0
+offset_bottom = 444.0
+overworld = NodePath("../..")

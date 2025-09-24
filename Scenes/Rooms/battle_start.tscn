@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct0t6njonbeah"]
+
+[ext_resource type="Script" path="res://Scripts/Overworld/battle_start.gd" id="1_sfial"]
+[ext_resource type="Texture2D" uid="uid://bjpbw1ch2fmuo" path="res://Sprites/Player/battle/Player Soul.png" id="2_v0o8i"]
+
+[node name="BattleStart" type="Node2D"]
+script = ExtResource("1_sfial")
+
+[node name="soul" type="Sprite2D" parent="."]
+texture = ExtResource("2_v0o8i")
