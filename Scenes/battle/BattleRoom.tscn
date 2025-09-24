@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=3 uid="uid://uhxlylwgsmao"]
+
+[ext_resource type="PackedScene" uid="uid://bnmmmvm8ghnjp" path="res://Scenes/Player/heart.tscn" id="1_gj6e5"]
+[ext_resource type="Script" path="res://Scripts/Battle/BattleRoom.gd" id="1_vkqml"]
+[ext_resource type="Texture2D" uid="uid://cp76w7eo13q35" path="res://Sprites/Battle/Background.png" id="2_juqu0"]
+[ext_resource type="Texture2D" uid="uid://bavqs3a30is5m" path="res://Sprites/Battle/1129.png" id="3_muic3"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="3_p52cx"]
+[ext_resource type="FontFile" uid="uid://b8ao2tagom4vw" path="res://Resources/Fonts/Mars_Needs_Cunnilingus.ttf" id="4_t4r1c"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_0ytlb"]
+viewport_path = NodePath("ViewContainer/View")
+
+[node name="BattleRoom" type="Node2D"]
+script = ExtResource("1_vkqml")
+
+[node name="ViewContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="View" type="SubViewport" parent="ViewContainer"]
+handle_input_locally = false
+size = Vector2i(640, 480)
+render_target_update_mode = 4
+
+[node name="gradient" type="Sprite2D" parent="ViewContainer/View"]
+visible = false
+position = Vector2(0, 480)
+scale = Vector2(3, 1)
+texture = ExtResource("2_juqu0")
+
+[node name="particule" type="CPUParticles2D" parent="ViewContainer/View"]
+visible = false
+position = Vector2(0, -30)
+scale = Vector2(4, 1)
+amount = 40
+lifetime = 3.0
+texture = ExtResource("3_muic3")
+emission_shape = 3
+emission_rect_extents = Vector2(150, 1)
+gravity = Vector2(200, 490)
+angular_velocity_max = 18.54
+damping_max = 100.0
+scale_amount_min = 0.2
+scale_amount_max = 0.5
+color = Color(0.419608, 0, 0.6, 1)
+
+[node name="Debug" type="RichTextLabel" parent="ViewContainer/View"]
+visible = false
+offset_left = 30.0
+offset_right = 230.0
+offset_bottom = 100.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = ExtResource("4_t4r1c")
+theme_override_font_sizes/normal_font_size = 28
+bbcode_enabled = true
+text = "
+[rainbow freq=0.25][tornado freq=2][fade]  Debug"
+
+[node name="ScrollingBackground" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1280.0
+offset_bottom = 960.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_0ytlb")
+stretch_mode = 1
+
+[node name="Heart" parent="." instance=ExtResource("1_gj6e5")]
+z_index = 1
+position = Vector2(315, 319)
+
+[node name="Camera" type="Camera2D" parent="."]
+ignore_rotation = false
+script = ExtResource("3_p52cx")
