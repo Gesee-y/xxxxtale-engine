@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TyperData" load_steps=3 format=3 uid="uid://c8vkda2dvrvct"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Typer_resource.gd" id="1_d01rs"]
+[ext_resource type="FontFile" uid="uid://bbly70lgaefhl" path="res://Resources/Fonts/Determination Mono.ttf" id="2_vpr35"]
+
+[resource]
+script = ExtResource("1_d01rs")
+text_font = ExtResource("2_vpr35")
+font_size = 32
+sound_path = "res://Sounds/Voices/typer.ogg"
+color = Color(1, 1, 1, 1)
+face_included = false
+shadow_offset = Vector2(0, 0)
+shadow_color = Color(0, 0, 0, 1)
+char_count_offset = -1
+tab_lenght = 2

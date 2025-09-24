@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TyperData" load_steps=3 format=3 uid="uid://cgukywoyeh125"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Typer_resource.gd" id="1_8kltb"]
+[ext_resource type="FontFile" uid="uid://tkkkehuxyiuv" path="res://Resources/Fonts/Sans Undertale.ttf" id="2_qcdvc"]
+
+[resource]
+script = ExtResource("1_8kltb")
+text_font = ExtResource("2_qcdvc")
+font_size = 14
+sound_path = "res://Sounds/Voices/sans.ogg"
+color = Color(0, 0, 0, 1)
+face_included = false
+shadow_offset = Vector2(0, 0)
+shadow_color = Color(0, 0, 0, 1)
+char_count_offset = 0
+tab_lenght = 4

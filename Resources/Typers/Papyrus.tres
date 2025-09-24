@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TyperData" load_steps=3 format=3 uid="uid://oan425u8u3lx"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Typer_resource.gd" id="1_co00g"]
+[ext_resource type="FontFile" uid="uid://c0njhbd0mrwjm" path="res://Resources/Fonts/Papyrus Undertale.ttf" id="2_wt6j6"]
+
+[resource]
+script = ExtResource("1_co00g")
+text_font = ExtResource("2_wt6j6")
+font_size = 15
+sound_path = "res://Sounds/Voices/talk_papyrus.wav"
+color = Color(0, 0, 0, 1)
+face_included = false
+shadow_offset = Vector2(0, 0)
+shadow_color = Color(0, 0, 0, 1)
+char_count_offset = 0
+tab_lenght = 4
