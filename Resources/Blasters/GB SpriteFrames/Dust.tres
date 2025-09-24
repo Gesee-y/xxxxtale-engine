@@ -1,0 +1,52 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://dl0053qjhujlx"]
+
+[ext_resource type="Texture2D" uid="uid://dewlph72ky1xl" path="res://Sprites/Enemies/Dust Sans/dgyn2xe-8382efbe-876e-420d-bf38-be594f733eb9.png" id="1_3uhtq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24ufp"]
+atlas = ExtResource("1_3uhtq")
+region = Rect2(1030, 509, 145, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5yus"]
+atlas = ExtResource("1_3uhtq")
+region = Rect2(1193, 509, 145, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48kru"]
+atlas = ExtResource("1_3uhtq")
+region = Rect2(1356, 509, 145, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61oua"]
+atlas = ExtResource("1_3uhtq")
+region = Rect2(867, 509, 145, 146)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24ufp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5yus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48kru")
+}],
+"loop": true,
+"name": &"blast",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61oua")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61oua")
+}],
+"loop": false,
+"name": &"steady",
+"speed": 5.0
+}]

@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://c6h7wd73bouj4"]
+
+[ext_resource type="Texture2D" uid="uid://0kxve8y6h2py" path="res://Sprites/Bullets/Gaster Blasters/Blaster_4.png" id="1_vaavx"]
+[ext_resource type="Texture2D" uid="uid://8ilisxrupl3u" path="res://Sprites/Bullets/Gaster Blasters/Blaster_5.png" id="2_r8h8g"]
+[ext_resource type="Texture2D" uid="uid://dlshgliwjbdx2" path="res://Sprites/Bullets/Gaster Blasters/Blaster_6.png" id="3_rwhr0"]
+[ext_resource type="Texture2D" uid="uid://cijcetniwb8r" path="res://Sprites/Bullets/Gaster Blasters/Blaster_1.png" id="4_10neu"]
+[ext_resource type="Texture2D" uid="uid://clqnu2nef5nth" path="res://Sprites/Bullets/Gaster Blasters/Blaster_2.png" id="5_d61re"]
+[ext_resource type="Texture2D" uid="uid://1hs1m4xo4syr" path="res://Sprites/Bullets/Gaster Blasters/Blaster_3.png" id="6_kc4qx"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vaavx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r8h8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rwhr0")
+}],
+"loop": false,
+"name": &"blast",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_10neu")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_d61re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kc4qx")
+}],
+"loop": false,
+"name": &"steady",
+"speed": 8.0
+}]

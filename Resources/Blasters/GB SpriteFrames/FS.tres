@@ -1,0 +1,52 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://b3t5oadboyaqx"]
+
+[ext_resource type="Texture2D" uid="uid://c32amblqbai0g" path="res://Sprites/Bullets/Gaster Blasters/swapfell_gaster_blaster_sprite_sheet_by_carno_power_ddgh2oq-fullview.png" id="1_d1aa4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l14sf"]
+atlas = ExtResource("1_d1aa4")
+region = Rect2(208, 0, 208, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dm6uj"]
+atlas = ExtResource("1_d1aa4")
+region = Rect2(416, 0, 208, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n7cr"]
+atlas = ExtResource("1_d1aa4")
+region = Rect2(624, 0, 208, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5h3v"]
+atlas = ExtResource("1_d1aa4")
+region = Rect2(0, 0, 208, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l14sf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dm6uj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n7cr")
+}],
+"loop": false,
+"name": &"blast",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5h3v")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5h3v")
+}],
+"loop": false,
+"name": &"steady",
+"speed": 5.0
+}]
