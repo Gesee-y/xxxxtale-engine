@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="BattleData" load_steps=3 format=3 uid="uid://di2rccchbjur"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Battlebase.gd" id="1_73qio"]
+[ext_resource type="Script" path="res://Resources/FNF MG/Script/Our Broken Constellation.gd" id="1_psn7x"]
+
+[resource]
+script = ExtResource("1_73qio")
+fnf_mode = false
+random_status = false
+serious_battle = false
+Enemies = Array[PackedScene]([])
+regular_dialogue_style = true
+BattleStyle = "Undertale"
+Sound = "res://Sounds/BGM/fs_rhythm_1.ogg"
+Bullets_patterns = Array[String](["res://Scripts/AttacksPatterns/FNF/Our Broken Constellation.gd"])
+battle_script = ExtResource("1_psn7x")
+H_attacks = Array[String]([])
+item_style = "original"
+status = Array[String]([])
+Dialogue_order = Array[Array]([])
+dialogue_file = ""
+player_dialogue = Array[String]([])
+random_slice_rotation = false
+direct_attack = false
+just_a_fight = true
+path_to_credit = ""
+attack_to_continue = false
+battle_color_theme = Color(1, 1, 1, 1)
