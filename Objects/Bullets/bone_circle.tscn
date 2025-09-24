@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbu7k5p3pvxfp"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/bone_circle.gd" id="1_hgl2f"]
+[ext_resource type="Texture2D" uid="uid://bavqs3a30is5m" path="res://Sprites/Battle/1129.png" id="2_xk7hc"]
+
+[node name="BoneCircle" type="Node2D"]
+script = ExtResource("1_hgl2f")
+
+[node name="Bones" type="Node2D" parent="."]
+
+[node name="1129" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_xk7hc")

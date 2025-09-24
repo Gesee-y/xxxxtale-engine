@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfe8hbxk3t43h"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/plateform.gd" id="1_lblph"]
+[ext_resource type="Texture2D" uid="uid://dy5slt5ntub7d" path="res://Sprites/Bullets/platform.png" id="1_x8us3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oq0ah"]
+resource_local_to_scene = true
+size = Vector2(394, 41)
+
+[node name="Plateform" type="CharacterBody2D"]
+scale = Vector2(1, 0.3)
+script = ExtResource("1_lblph")
+
+[node name="sprite" type="NinePatchRect" parent="."]
+offset_right = 392.0
+offset_bottom = 40.0
+texture = ExtResource("1_x8us3")
+patch_margin_left = 1
+patch_margin_right = 1
+patch_margin_bottom = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(197, 19.5)
+shape = SubResource("RectangleShape2D_oq0ah")
+one_way_collision = true

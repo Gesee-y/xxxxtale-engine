@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce0q8yv1l8g7u"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/bone_stab.gd" id="1_j2bvg"]
+[ext_resource type="Texture2D" uid="uid://damy1w148og4m" path="res://Sprites/Bullets/square.png" id="2_5ivor"]
+
+[node name="BoneStab" type="Node2D"]
+script = ExtResource("1_j2bvg")
+
+[node name="Bones" type="Node2D" parent="."]
+
+[node name="crashZone" type="NinePatchRect" parent="."]
+offset_right = 60.0
+offset_bottom = 87.0
+texture = ExtResource("2_5ivor")
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1

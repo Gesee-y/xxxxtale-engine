@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlnt5n6gq2jgi"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/arrows.gd" id="1_rhokl"]
+[ext_resource type="SpriteFrames" uid="uid://bpe6g5aqx5xtv" path="res://Resources/arrow.tres" id="2_uexuh"]
+[ext_resource type="Script" path="res://Scripts/Battle/hitbox.gd" id="3_fmdry"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k4tju"]
+radius = 3.0
+height = 20.0
+
+[node name="Arrow" type="Node2D"]
+script = ExtResource("1_rhokl")
+damage = 4.0
+b_curse = 1.0
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_uexuh")
+
+[node name="Hitbox" type="Area2D" parent="Sprite" node_paths=PackedStringArray("bullet")]
+script = ExtResource("3_fmdry")
+bullet = NodePath("../..")
+hit_shield = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Hitbox"]
+shape = SubResource("CapsuleShape2D_k4tju")

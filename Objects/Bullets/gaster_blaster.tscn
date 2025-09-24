@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://cc0n2cv4t8f6x"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/gaster_blaster.gd" id="1_7r07h"]
+[ext_resource type="Resource" uid="uid://6nowp2mb1exu" path="res://Resources/Blasters/Dust.tres" id="2_542k1"]
+[ext_resource type="SpriteFrames" uid="uid://c6h7wd73bouj4" path="res://Resources/Blasters/GB SpriteFrames/Classic.tres" id="2_le3sm"]
+[ext_resource type="Texture2D" uid="uid://drsxp8bgsqmht" path="res://Sprites/Bullets/Gaster Blasters/Beam_1.png" id="8_egkmc"]
+[ext_resource type="Script" path="res://Scripts/Battle/hitbox.gd" id="9_48mhc"]
+[ext_resource type="Texture2D" uid="uid://damy1w148og4m" path="res://Sprites/Bullets/square.png" id="10_b33h0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ptvwm"]
+resource_local_to_scene = true
+radius = 22.0
+height = 158.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kd2f7"]
+resource_local_to_scene = true
+radius = 26.0
+height = 100.0
+
+[node name="Gaster_blaster" type="Node2D"]
+script = ExtResource("1_7r07h")
+blaster_res = ExtResource("2_542k1")
+damage = 4.0
+b_curse = 2.0
+
+[node name="Blaster" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_le3sm")
+animation = &"idle"
+
+[node name="cont" type="Node2D" parent="Blaster"]
+
+[node name="Beam" type="NinePatchRect" parent="Blaster/cont"]
+offset_left = -33.0
+offset_top = -49.0
+offset_right = 33.0
+offset_bottom = 151.0
+texture = ExtResource("8_egkmc")
+patch_margin_top = 148
+
+[node name="hitbox" type="Area2D" parent="Blaster" node_paths=PackedStringArray("bullet")]
+script = ExtResource("9_48mhc")
+bullet = NodePath("../..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Blaster/hitbox"]
+z_index = 1
+position = Vector2(0, 135)
+shape = SubResource("CapsuleShape2D_ptvwm")
+
+[node name="crashCollision" type="CollisionShape2D" parent="Blaster/hitbox"]
+shape = SubResource("CapsuleShape2D_kd2f7")
+
+[node name="crashZone" type="NinePatchRect" parent="Blaster"]
+offset_left = -28.0
+offset_top = 51.0
+offset_right = 32.0
+offset_bottom = 138.0
+texture = ExtResource("10_b33h0")
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1

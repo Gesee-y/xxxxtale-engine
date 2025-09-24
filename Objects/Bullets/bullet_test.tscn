@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://d1yrqjp15k3uj"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/bullets.gd" id="1_a0k67"]
+[ext_resource type="Texture2D" uid="uid://hb2f6hwhgs6d" path="res://Sprites/Bullets/Fire/Fire1.png" id="2_0hgpu"]
+[ext_resource type="Texture2D" uid="uid://cy3klbbc5xdye" path="res://Sprites/Bullets/Fire/Fire2.png" id="3_ls263"]
+[ext_resource type="Script" path="res://Scripts/Battle/hitbox.gd" id="4_0wyxm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ptkby"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0hgpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ls263")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mbnbp"]
+radius = 7.07107
+
+[node name="Bullet" type="Node2D"]
+script = ExtResource("1_a0k67")
+damage = 2.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -6.5)
+sprite_frames = SubResource("SpriteFrames_ptkby")
+autoplay = "default"
+
+[node name="hitbox" type="Area2D" parent="." node_paths=PackedStringArray("bullet")]
+position = Vector2(0, -6.5)
+script = ExtResource("4_0wyxm")
+bullet = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_mbnbp")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)

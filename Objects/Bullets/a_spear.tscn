@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch1u3lu30mi8k"]
+
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/a_spear.gd" id="1_exqnc"]
+[ext_resource type="Texture2D" uid="uid://dyolryqhk3kgs" path="res://Sprites/Characters/Asgore/Asgore Dreemurr.png" id="1_xhpvy"]
+[ext_resource type="Script" path="res://Scripts/Battle/hitbox.gd" id="3_36c86"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tu4qc"]
+atlas = ExtResource("1_xhpvy")
+region = Rect2(294, 723, 232, 47)
+
+[node name="ASpear" type="Node2D"]
+script = ExtResource("1_exqnc")
+damage = 4.0
+b_curse = 1.0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.5)
+texture = SubResource("AtlasTexture_tu4qc")
+
+[node name="Hitbox" type="Area2D" parent="Sprite" node_paths=PackedStringArray("bullet")]
+script = ExtResource("3_36c86")
+bullet = NodePath("../..")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/Hitbox"]
+polygon = PackedVector2Array(-101, -4, -68, -3, -53, -2, 38, -1, 44, -2, 60, -3, 59, -12, 55, -20, 55, -22, 63, -17, 73, -12, 85, -10, 99, -10, 98, -8, 79, -8, 62, -11, 63, -3, 64, -1, 112, -1, 112, 1, 63, 1, 63, 8, 62, 11, 73, 10, 84, 8, 97, 8, 97, 10, 83, 10, 75, 12, 68, 14, 60, 19, 56, 22, 55, 18, 58, 12, 60, 6, 59, 2, 38, 2, -53, 1, -71, 3, -103, 4, -110, 0)

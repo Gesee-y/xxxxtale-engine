@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://fpmmd1iab1gx"]
+
+[ext_resource type="Texture2D" uid="uid://beik4f6o6ajkj" path="res://Sprites/Characters/Undyne/PC Computer - Undertale - Undyne.png" id="1_6wwur"]
+[ext_resource type="Script" path="res://Scripts/Battle/Bullets/spear.gd" id="1_u5eg3"]
+[ext_resource type="Script" path="res://Scripts/Battle/hitbox.gd" id="2_e60hw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v73gi"]
+atlas = ExtResource("1_6wwur")
+region = Rect2(177, 4373, 57, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm5x1"]
+atlas = ExtResource("1_6wwur")
+region = Rect2(293, 4373, 57, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iowbd"]
+atlas = ExtResource("1_6wwur")
+region = Rect2(235, 4373, 57, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qh56"]
+atlas = ExtResource("1_6wwur")
+region = Rect2(119, 4373, 57, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_go4hx"]
+atlas = ExtResource("1_6wwur")
+region = Rect2(61, 4373, 57, 14)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_idiih"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v73gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm5x1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iowbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v73gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qh56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_go4hx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_py0b5"]
+size = Vector2(1.99999, 49)
+
+[node name="Spear" type="Node2D"]
+script = ExtResource("1_u5eg3")
+damage = 2.0
+b_curse = 1.0
+
+[node name="sprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1, 2)
+sprite_frames = SubResource("SpriteFrames_idiih")
+frame = 3
+frame_progress = 0.632453
+
+[node name="Hitbox" type="Area2D" parent="sprite" node_paths=PackedStringArray("bullet")]
+script = ExtResource("2_e60hw")
+bullet = NodePath("../..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sprite/Hitbox"]
+position = Vector2(0.5, -1.49996)
+rotation = 1.57079
+shape = SubResource("RectangleShape2D_py0b5")
