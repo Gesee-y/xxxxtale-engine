@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="CharacterResource" load_steps=2 format=3 uid="uid://cfm56cho6py6l"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Character_resource.gd" id="1_qcpkn"]
+
+[resource]
+script = ExtResource("1_qcpkn")
+Name = "Chara"
+max_hp = 20.0
+hp = 20.0
+kr = false
+kr_hp = 20.0
+attack = 5
+defense = 1
+armor_name = "Bandage"
+weapon_name = "R.Knife"
+EXP = 0
+LV = 1
+magic_power = 10
+color_theme = Color(1, 1, 1, 1)
+hp_bars_color = {
+"background": Color(0.545098, 0, 0, 1),
+"foreground": Color(1, 1, 0, 1),
+"karma": Color(1, 0.411765, 0.705882, 1)
+}
+genre = 0
+capacity = 0
+sub_character = null
+power = Array[Resource("res://Scripts/Resources/MagicBase.gd")]([])
