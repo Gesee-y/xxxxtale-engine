@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0o7qxp801c0r"]
+
+[ext_resource type="SpriteFrames" uid="uid://c2gqxb4boxm1v" path="res://Resources/Player SpriteFrames/Frisk.tres" id="1_logkp"]
+[ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_rlx26"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7mr8"]
+size = Vector2(17, 10.5)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_rlx26")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_logkp")
+animation = &"down"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(3, 11.75)
+shape = SubResource("RectangleShape2D_f7mr8")
