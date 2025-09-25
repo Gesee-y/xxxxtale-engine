@@ -21,7 +21,8 @@ The first was UnderDelta which aimed to be a fully featured undertale/deltarune 
 - **Efficient turn-based systems**: Using multiple triggers to manage the different states of the fight.
 - **Serialization**: Save files are serialized to ensure no everyday hacker can play with the files.
 - **Example games**: The engine comes witg 3 fangames, you can inspect the code, hack it and fully master the engine.
-- **Ton of template resources**: Create your own characters, typers, weapon, battle style, dialogue management, 
+- **Ton of template resources**: Create your own characters, typers, weapon, battle style, dialogue management and even spells.
+- **multi-characters battle**: This engine can go beyond the boundaries of a traditional undertale fangame by introducing multiple characters in a fight, each choosing its actions.
 - **Easy dialogue system**: No hardcoding here—load your dialogues from a separate file in a completely human-readable way.
    * Example: 
 ```txt
